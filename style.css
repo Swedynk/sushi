@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto condensed', sans-serif;
+    color: #444;
+    line-height: 1.5em;
+    font-size: 18px;
+}
+
+.header {
+    padding: 15px 0;
+}
+
+.logo-item {
+    font-size: 2em;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1.8em;
+}
+
+h2 span {
+    color: #ff0000;
+}
+
+.slogan {
+    color: #848484;
+    font-size: 28px;
+}
+
+section {
+    padding: 15px 0;
+}
+
+.button {
+    background-color: #ff0000;
+    height: 50px;
+    display: block;
+    text-align: center;
+    padding: 7px 0;
+    color: #fff;
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.49);
+}
+
+.banner {
+    background-image: url(images/slide-410f90b8-b5df-4b71-a756-0c413a94916f.jpg);
+    height: 500px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.deadline ul {
+    list-style-type: none;
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 15px;
+}
+.deadline ul::after{
+    display: block;
+    text-align: center;
+}
+.day::after{
+    content:"дни";
+}
+.hour::after{
+    content:"часы";
+}
+.minute::after{
+    content:"минуты";
+}
+.second::after{
+    content:"секунды";
+}
+.action .container {
+    border-bottom: 1px solid #c9c9c9;
+}
+
+.deadline li::after {
+    content: "";
+    display: block;
+    background-image: url(images/flip_gradient.png);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom: 0:
+}
+
+.deadline li {
+    float: left;
+    background-image: url(images/flip.png);
+    width: 55px;
+    height: 89px;
+
+    text-align: center;
+    line-height: 89px;
+    position: relative;
+}
+
+@media screen and (max-width:992px) {
+    .banner {
+        height: 400px;
+    }
+        .deadline li {
+    width: 32px;
+    height: 63px;
+            font-size: 2em;
+            background-size: cover;
+    text-align: center;
+    line-height: 63px;
+    position: relative;
+}
+@media screen and (max-width:768px) {
+    .banner {
+        height: 250px;
+    }
+    .deadline{
+        text-align: center;
+    }
+}
+    .hours strong{
+        display: block;
+    }
+    .clock,.bycicle,.heart{
+        background-repeat: no-repeat;
+        padding-left:46px;
+    }
+    .clock{
+        background-image: url(images/clock.png);
+    }
+    .bycicle{
+        background-repeat: no-repeat;
+        background-image: url(images/bicycler.png);
+        
+    }
+    .heart{
+      background-repeat: no-repeat;
+        background-image: url(images/heart.png);  
+    }
+    .border{
+        border: 3px solid #c9c9c9;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+    .firstmenu img{
+        overflow: hidden;
+        float: left;
+    }
+    .border strong{
+        display: block;
+        margin: 30px;
+    }
+    .price span{
+        
+    }
+    .line {
+        text-align: center;
+        margin-bottom: 15px;
+        position: relative;
+    }
+    .line::after{
+        content: "";
+        display: block;
+        border-bottom: 2px solid #c9c9c9;
+        position: absolute;
+        left: 0;
+        right:0;
+        top:50%;
+        z-index: 5;
+    }
+    .line b {
+        display: inline-block;
+        background-color: #fff;
+        z-index:10;
+        position: relative;
+        padding: 0 30px;
+        font-weight: normal;
+    }
+    .banner_two img{
+        width: 100%;
+    }
+    .about_us p{
+        text-align: center;
+    }
+    .video .border{
+        background-color: #c9c9c9;
+    }
+    .video iframe{
+        display: block;
+        width: 100%;
+        height: 250px;
+    }
